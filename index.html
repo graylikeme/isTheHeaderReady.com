@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Did Sawa Conquer the Header?</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .main-answer {
+      font-size: 10rem;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-answer">NO</div>
+  <div class="subtitle" id="subtitle"></div>
+
+  <script>
+    const phrases = [
+      "Still debugging…", "Header? What header?", "Nope, he’s in a meeting.",
+      "Maybe tomorrow.", "404: Header not found.", "He went to make coffee.",
+      "Designers are still arguing.", "He’s on step 2 of 98.", "Stuck in merge conflict.",
+      "Waiting for Figma sync.", "Still wrapping divs in divs.", "Backend says it’s frontend's fault.",
+      "Frontend says it's backend's fault.", "He chose violence… against CSS.",
+      "Header needs more padding.", "Lost in the flexbox abyss.", "Centering it broke everything.",
+      "Turns out it works only on Safari.", "He deployed it… to /dev/null.",
+      "Header is now self-aware. It refuses.", "Still kerning the fonts.",
+      "Accidentally deleted prod.", "Why does it work locally?", "Still stuck in Stack Overflow thread.",
+      "No tests passed. No header.", "He switched to Vim. Regret followed.",
+      "It compiles! But nothing shows.", "Too many z-indexes.", "Still scrolling through ChatGPT suggestions.",
+      "‘Just 5 more minutes’ — 3 hours ago.", "Blame Tailwind.", "Not MVP enough.",
+      "Got distracted refactoring button.", "Header decided to unionize.",
+      "He’s trying a new framework… again.", "Let me guess… rewrote it in Rust?",
+      "Sawa's stuck in dependency hell.", "Ran out of RAM and patience.",
+      "He's debugging… in production.", "Header is now an NFT.",
+      "CSS Grid betrayed him.", "Still naming the layers: Layer 83",
+      "He added AI. It became worse.", "Infinite loop of commits.",
+      "Redesigned it for the 6th time.", "He chose the dark theme. It disappeared.",
+      "Header caught fire. Literally.", "Still figuring out the perfect border-radius.",
+      "Too many conflicting PRs.", "Header is on sick leave.",
+      "Moved it to Trello. Ignored since.", "Sawa rage quit. Twice.",
+      "Header now lives in Notion.", "Still searching for pixel perfection.",
+      "The header's in another castle.", "Found bugs in the bugs.",
+      "Deadline moved, so did motivation.", "Code compiles. Emotion doesn’t.",
+      "Found love. Lost header.", "Sent it to QA. Never came back.",
+      "Header in limbo between branches.", "Still arguing with ESLint.",
+      "Header has commitment issues.", "Accidentally opened TikTok.",
+      "Asked ChatGPT. Got sarcasm back.", "Trying to avoid burnout… again.",
+      "Header’s ghosted us.", "Stuck between component and container.",
+      "He made a Kanban board. Never used it.", "Still importing Google Fonts.",
+      "Header redesign v12.7-beta", "Blame the dark mode toggle.",
+      "He tried a scroll animation. Regret ensued.", "Header's allergic to deployment.",
+      "Still in code review purgatory.", "Header's stuck behind a feature flag.",
+      "Got distracted optimizing SVGs.", "It worked on his machine.",
+      "Header passed away peacefully.", "No one knows what 'done' means.",
+      "Still waiting for approval.", "It’s a feature, not a bug.",
+      "He lost the Figma password.", "Was almost there. Then the sprint ended.",
+      "He asked a rubber duck. No reply.", "Still converting to TypeScript.",
+      "Sawa tried to center it. He failed.", "Found an old TODO. Panicked.",
+      "Header has imposter syndrome.", "Still A/B testing padding.",
+      "Header's in the backlog. Forever.", "He rage-deleted node_modules.",
+      "Header ran off with the navbar.", "Still in 'just one last tweak' mode.",
+      "Switched from Vue to React mid-header.", "Header's gatekept by middleware.",
+      "Sawa blinked. It broke.", "Header needs... more whitespace.",
+      "He’s meditating on UI Zen.", "It’s not a bug, it’s a lifestyle.",
+      "He tried ChatGPT… it made a blog instead.", "Header's on vacation.",
+      "He made a pixel-perfect button. Then forgot the header.", "Still nesting divs.",
+      "You don’t choose the header. The header chooses you."
+    ];
+
+    const randomIndex = Math.floor(Math.random() * phrases.length);
+    document.getElementById("subtitle").textContent = phrases[randomIndex];
+  </script>
+</body>
+</html>
